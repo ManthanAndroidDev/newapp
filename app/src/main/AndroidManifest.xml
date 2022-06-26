@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.newapp">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Newapp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Fupupdate_Pro"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Policy"
+            android:exported="false" />
+        <activity
+            android:name=".DataDownload_pro"
+            android:exported="false" />
+        <activity
+            android:name=".greets"
+            android:exported="false" />
+        <activity
+            android:name=".policyreports"
+            android:exported="false" />
+        <activity
+            android:name=".opolicysts"
+            android:exported="false" />
+        <activity
+            android:name=".policysts"
+            android:exported="false" />
+        <activity
+            android:name=".premiumc"
+            android:exported="false" />
+        <activity
+            android:name=".fupupdate"
+            android:exported="false" />
+        <activity
+            android:name=".mydata"
+            android:exported="false" />
+        <activity
+            android:name=".datadownload"
+            android:exported="false" />
+        <activity
+            android:name=".notificationV"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Otp_verification"
+            android:exported="false" />
+        <activity
+            android:name=".Number_verification"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

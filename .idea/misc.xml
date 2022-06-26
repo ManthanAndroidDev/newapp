@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable-v24/button_bg.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable-v24/call.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable-v24/edittext_g.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/agency_bg.xml" value="0.1325" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/bell.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/displaynumber_bg.xml" value="0.1325" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/follow.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/navigation_bg.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/person.xml" value="0.1325" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/profileback_bg.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/searchbar_bg.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/drawable/term_condition.xml" value="0.139" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_add_policy.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_data_download_pro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_datadownload.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_fupupdate.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_fupupdate_pro.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_mydata.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_notification_v.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_otp_verification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_policyreports.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_premiumc.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/activity_profile_icon.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/custom_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/fragment_follow_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/fragment_profile.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/fragment_setting.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/list_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/layout/number_verification.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/masaw/AndroidStudioProjects/newapp/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

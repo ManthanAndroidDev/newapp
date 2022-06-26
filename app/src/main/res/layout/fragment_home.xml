@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EBF0F9"
+    tools:context=".HomeFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/profile1" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profilePhoto"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Hello,"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/helloName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/profilePhoto"
+        android:text="Manthan Sawant"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/notificationBell"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/bell" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewmain"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/profilePhoto"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp">
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/cardviewmain"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/downloadlogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Policy Data Download"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="To download online data you will require portal login"/>
+
+                            </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    app:cardCornerRadius="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/mydatalogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="My Data"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Here you can see all your data and you can enter new policy."/>
+
+                            </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/second"
+                android:layout_below="@id/first"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/fupdatelogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="FUP Date Update"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="To update premium and FUP date."/>
+
+                            </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    app:cardCornerRadius="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/ppaidlogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Premium Cirtificate"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="Premium Paid Certificate of own agency."/>
+
+                            </ScrollView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/third"
+                android:layout_below="@id/second"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/statuslogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Policy Status"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="See and share status based on your data."/>
+
+
+                            </ScrollView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    app:cardCornerRadius="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/otherslogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Other Policy Status"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <ScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="none">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:layout_marginStart="7dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="See and share status loan repayment and loan interest payment."/>
+
+                            </ScrollView>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourth"
+                android:layout_below="@id/third"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/reportslogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Policy Reports"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Premium due, outstanding due, lapse reports, family insurance chart."/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="#D3DEF9"
+                    android:layout_marginVertical="2dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    app:cardCornerRadius="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/greetlogo"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="2dp"
+                            android:layout_marginTop="2dp"
+                            android:text="Greetings, Concepts"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#EBF0F9"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:textSize="14sp"
+                                android:layout_marginStart="7dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginTop="5dp"
+                                android:text="Combination , greetings, life, motor, health concepts."/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

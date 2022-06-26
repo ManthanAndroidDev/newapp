@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allfragment"
+    tools:context=".Otp_verification">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:elevation="10dp"
+        android:src="@drawable/login2"
+        android:layout_marginBottom="165dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview1"
+        app:layout_constraintStart_toStartOf="@+id/cardview1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Please Enter The OTP Send To You"/>
+
+            <TextView
+                android:id="@+id/remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full"
+                android:layout_centerHorizontal="true"
+                android:text=""/>
+
+            <com.chaos.view.PinView
+                android:id="@+id/firstPinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remain"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:itemBackground="@color/allfragment"
+                android:textColor="@color/fullblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorColor="@color/fullblue"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="5"
+                app:itemHeight="46dp"
+                app:itemRadius="6dp"
+                app:itemSpacing="3dp"
+                app:itemWidth="46dp"
+                app:lineWidth="0.8dp"
+                app:viewType="rectangle" />
+
+            <TextView
+                android:id="@+id/resendotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_below="@id/firstPinView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:text="Dont Received The otp RESEND OTP AGAIN"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="25dp"
+                android:layout_below="@id/resendotp"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_bg"
+                android:text="Submit"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

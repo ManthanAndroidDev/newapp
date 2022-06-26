@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/allfragment"
+    tools:context=".Number_verification">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:elevation="10dp"
+        android:src="@drawable/login1"
+        android:layout_marginBottom="180dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardview"
+        app:layout_constraintStart_toStartOf="@+id/cardview" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We Will Send you One Time Password on This"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"/>
+
+            <TextView
+                android:id="@+id/remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:text="Mobile Number"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/remain"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_g"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="10dp"
+                android:maxLength="10"
+                android:hint="Enter The Number"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+            <Button
+                android:id="@+id/getotp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/mobile_number"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/button_bg"
+                android:text="GET OTP"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
