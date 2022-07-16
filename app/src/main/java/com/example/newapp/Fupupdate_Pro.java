@@ -10,5 +10,6 @@ public class Fupupdate_Pro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fupupdate_pro);
+        getSupportActionBar().hide();
     }
 }

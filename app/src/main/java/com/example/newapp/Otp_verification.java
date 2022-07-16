@@ -24,9 +24,6 @@ public class Otp_verification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_verification);
 
-        getSupportActionBar().hide();
-
-
         textView = findViewById(R.id.remain);
         button = findViewById(R.id.submit);
         pinView = findViewById(R.id.firstPinView);

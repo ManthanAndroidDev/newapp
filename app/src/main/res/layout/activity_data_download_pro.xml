@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/allfragment"
     tools:context=".DataDownload_pro">
 
     <TextView
@@ -18,98 +19,106 @@
         android:textStyle="bold"
         android:textSize="20sp"/>
 
-    <EditText
-        android:id="@+id/agent_code"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:drawableStart="@drawable/person"
-        android:drawablePadding="8dp"
-        android:paddingStart="10dp"
-        android:layout_height="45dp"
-        android:layout_below="@id/head_text"
-        android:background="@drawable/edittext_g"
-        android:layout_marginHorizontal="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/navigation_bg"
         android:layout_marginTop="10dp"
-        android:hint="Agent Code"/>
+        android:layout_below="@+id/head_text">
 
-    <EditText
-        android:id="@+id/Password_main"
-        android:layout_width="match_parent"
-        android:drawableStart="@drawable/password"
-        android:drawablePadding="8dp"
-        android:paddingStart="10dp"
-        android:layout_height="45dp"
-        android:layout_below="@id/agent_code"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_g"
-        android:hint="Password" />
+        <EditText
+            android:id="@+id/agent_code"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="8dp"
+            android:paddingStart="10dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_g"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:hint="Agent Code"/>
 
-    <EditText
-        android:id="@+id/date_bmain"
-        android:layout_width="match_parent"
-        android:drawableStart="@drawable/date"
-        android:drawablePadding="8dp"
-        android:paddingStart="10dp"
-        android:layout_height="45dp"
-        android:background="@drawable/edittext_g"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/Password_main"
-        android:hint="Date Of Birth (DD/MM/YYYY)"/>
+        <EditText
+            android:id="@+id/Password_main"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="8dp"
+            android:paddingStart="10dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/agent_code"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_g"
+            android:hint="Password" />
 
-    <Button
-        android:id="@+id/step1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Step 1: new policy download"
-        android:textStyle="bold"
-        android:background="@drawable/button_bg"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/date_bmain"/>
+        <EditText
+            android:id="@+id/date_bmain"
+            android:layout_width="match_parent"
+            android:drawableStart="@drawable/date"
+            android:drawablePadding="8dp"
+            android:paddingStart="10dp"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_g"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/Password_main"
+            android:hint="Date Of Birth (DD/MM/YYYY)"/>
 
-    <Button
-        android:id="@+id/step2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="step 2: mobile number/dob update"
-        android:textStyle="bold"
-        android:background="@drawable/button_bg"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/step1"/>
+        <Button
+            android:id="@+id/step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 1: new policy download"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/date_bmain"/>
 
-    <Button
-        android:id="@+id/step3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="step 3: address nominee update"
-        android:textStyle="bold"
-        android:background="@drawable/button_bg"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/step2"/>
+        <Button
+            android:id="@+id/step2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="step 2: mobile number/dob update"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/step1"/>
 
-    <TextView
-        android:id="@+id/For_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/step3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="Forgot Password"
-        android:textSize="18sp"
-        android:textColor="@color/fullblue"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/step3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="step 3: address nominee update"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/step2"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="If you don't have password, put 1111 as password or call customer care"
-        android:textStyle="bold"
-        android:textColor="@color/fullblue"
-        android:textSize="12sp"
-        android:layout_below="@id/For_password"
-        android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/For_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Forgot Password"
+            android:textSize="18sp"
+            android:textColor="@color/fullblue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="If you don't have password, put 1111 as password or call customer care"
+            android:textStyle="bold"
+            android:textColor="@color/fullblue"
+            android:textSize="12sp"
+            android:layout_below="@id/For_password"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
 </RelativeLayout>

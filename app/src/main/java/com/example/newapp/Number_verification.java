@@ -19,8 +19,6 @@ public class Number_verification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.number_verification);
 
-        getSupportActionBar().hide();
-
         enternumber = findViewById(R.id.mobile_number);
         getotpbutton = findViewById(R.id.getotp);
 
@@ -29,18 +27,18 @@ public class Number_verification extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if(!enternumber.getText().toString().trim().isEmpty()){
-                    if ((enternumber.getText().toString().trim()).length() == 10){
+//                if(!enternumber.getText().toString().trim().isEmpty()){
+//                    if ((enternumber.getText().toString().trim()).length() == 10){
 
                 Intent intent = new Intent(Number_verification.this, Otp_verification.class);
                 intent.putExtra("mobile", enternumber.getText().toString());
                 startActivity(intent);
-                    }else {
-                        Toast.makeText(Number_verification.this, "Please Enter The Correct Number", Toast.LENGTH_LONG).show();
-                    }
-                }else {
-                    Toast.makeText(Number_verification.this, "Enter The Number", Toast.LENGTH_LONG).show();
-                }
+//                    }else {
+//                        Toast.makeText(Number_verification.this, "Please Enter The Correct Number", Toast.LENGTH_LONG).show();
+//                    }
+//                }else {
+//                    Toast.makeText(Number_verification.this, "Enter The Number", Toast.LENGTH_LONG).show();
+//                }
             }
         });
 

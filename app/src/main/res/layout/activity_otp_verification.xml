@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
-                android:text="Please Enter The OTP Send To You"/>
+                android:text="Please Enter The OTP Send To You"
+                android:textColor="#808080" />
 
             <TextView
                 android:id="@+id/remain"
@@ -44,6 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/full"
                 android:layout_centerHorizontal="true"
+                android:textColor="#808080"
                 android:text=""/>
 
             <com.chaos.view.PinView
@@ -76,6 +79,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="#808080"
                 android:textStyle="bold"
                 android:layout_below="@id/firstPinView"
                 android:layout_centerHorizontal="true"

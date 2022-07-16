@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/navigation_bg"
         android:layout_alignParentBottom="true"
+        app:itemIconTint="@drawable/item_selector"
         android:layout_marginHorizontal="10dp"
         app:menu="@menu/bottom_menu"
         app:labelVisibilityMode="unlabeled"

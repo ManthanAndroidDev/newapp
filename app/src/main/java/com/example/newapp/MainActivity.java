@@ -1,6 +1,7 @@
 package com.example.newapp;
 
-import androidx.annotation.NonNull;
+import
+        androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -10,7 +11,8 @@ import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-public class MainActivity extends AppCompatActivity {
+public class
+MainActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
@@ -21,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         bottomNavigationView = findViewById(R.id.navigationbar);
-        getSupportFragmentManager().beginTransaction().replace(R.id.framenlay, new HomeFragment());
+        getSupportFragmentManager().beginTransaction().replace(R.id.framenlay, new HomeFragment()).commit();
 
         bottomNavigationView.setSelectedItemId(R.id.nav_home);
 

@@ -62,16 +62,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/navigation_bg"
+        android:layout_below="@+id/SA_tag"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/SA_tag">
+        android:background="@drawable/navigation_bg">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="15dp"
-            android:background="@drawable/agency_bg"
             android:layout_marginTop="20dp"
+            android:background="@drawable/agency_bg"
             android:orientation="vertical">
 
             <TextView
@@ -92,8 +92,8 @@
                 android:layout_below="@id/user_name"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
                 android:text="Password :"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -105,8 +105,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:textColor="@color/black"
                 android:text="Birth Date :"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -117,8 +117,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@id/user_name"
-                android:textColor="@color/black"
                 android:text="01959139"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -130,8 +130,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_toEndOf="@id/password"
-                android:textColor="@color/black"
                 android:text="Manthan@123"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -144,8 +144,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_toEndOf="@id/Date_Birth"
-                android:textColor="@color/black"
                 android:text="12/01/1973"
+                android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
