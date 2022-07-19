@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="@color/allfragment"
     tools:context=".SettingFragment">
 
     <LinearLayout
@@ -108,10 +109,10 @@
 
                 <LinearLayout
                     android:id="@+id/innerLinear"
-                    android:visibility="visible"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:visibility="visible"
                     android:orientation="vertical">
 
                     <androidx.cardview.widget.CardView
@@ -518,8 +519,8 @@
                     android:id="@+id/contain_ep"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toTopOf="parent"
                     android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
                     android:orientation="vertical">
 
                     <EditText
@@ -527,18 +528,29 @@
                         android:layout_height="45dp"
                         android:layout_marginHorizontal="20dp"
                         android:hint="Name"
-                        android:background="@drawable/edittext_g" />
+                        android:background="@drawable/edittext_g"/>
 
                     <EditText
+                        android:id="@+id/mobile_number"
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
+                        android:layout_below="@+id/remain"
                         android:layout_marginHorizontal="20dp"
-                        android:hint="Designation"
-                        android:background="@drawable/edittext_g" />
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_g"
+                        android:drawableLeft="@drawable/call"
+                        android:drawablePadding="10dp"
+                        android:hint="Enter The Number"
+                        android:textColorHint="#808080"
+                        android:textColor="#808080"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="10dp" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginHorizontal="20dp"
                         android:hint="Address"
                         android:background="@drawable/edittext_g" />
@@ -546,6 +558,7 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginHorizontal="20dp"
                         android:hint="Email"
                         android:background="@drawable/edittext_g" />
@@ -553,6 +566,7 @@
                     <Button
                         android:layout_width="match_parent"
                         android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
                         android:text="submit"
                         android:layout_marginHorizontal="70dp"
                         android:background="@drawable/button_bg" />
@@ -561,6 +575,7 @@
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </ScrollView>
 
     </LinearLayout>

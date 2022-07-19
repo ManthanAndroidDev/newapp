@@ -25,7 +25,7 @@ public class SettingFragment extends Fragment {
         view_profile = view.findViewById(R.id.View_profile);
         edit_profile = view.findViewById(R.id.Edit_profile);
 
-        LinearLayout view_ll = view.findViewById(R.id.contain_vp);
+        LinearLayout view_ll = view.findViewById(R.id.innerLinear);
         LinearLayout edit_ll = view.findViewById(R.id.contain_ep);
 
         view_profile.setOnClickListener(new View.OnClickListener() {

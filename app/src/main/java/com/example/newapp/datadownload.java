@@ -22,7 +22,7 @@ public class datadownload extends AppCompatActivity {
 
         floatingActionButton = findViewById(R.id.data_Downfloat);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(datadownload.this, R.color.allfragment);
+        AlertDialog.Builder builder = new AlertDialog.Builder(datadownload.this);
 
         builder.setTitle("TERMS AND CONDITION :")
                 .setMessage("Data Download Process Is Fully Depends On New Portal, In Case Of Data Is Not Getting Download Company Is Not Responsible And Company Will Not Provide Any Refund. We Work Best For You This Application Is Purely Based On Your Portal.")

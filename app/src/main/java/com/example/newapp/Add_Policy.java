@@ -19,9 +19,9 @@ import java.util.Locale;
 
 public class Add_Policy<adapterItem> extends AppCompatActivity {
 
-    String[] items = {"MLY", "QLY", "HLY", "YLY", "SGL"};
-    AutoCompleteTextView autoCompleteTxt;
-    ArrayAdapter<String> adapterItem;
+//    String[] items = {"MLY", "QLY", "HLY", "YLY", "SGL"};
+//    AutoCompleteTextView autoCompleteTxt;
+//    ArrayAdapter<String> adapterItem;
 
     final Calendar myCalendar = Calendar.getInstance();
     EditText datepic;
@@ -33,20 +33,20 @@ public class Add_Policy<adapterItem> extends AppCompatActivity {
         getSupportActionBar().hide();
 
         datepic = findViewById(R.id.DOB_date);
-        autoCompleteTxt = findViewById(R.id.autoComplete_txt);
+//        autoCompleteTxt = findViewById(R.id.autoComplete_txt);
 
-        adapterItem = new ArrayAdapter<String>(this, R.layout.list_item, items);
-        autoCompleteTxt.setAdapter(adapterItem);
+//        adapterItem = new ArrayAdapter<String>(this, R.layout.list_item, items);
+//        autoCompleteTxt.setAdapter(adapterItem);
 
-        autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String item = parent.getItemAtPosition(position).toString();
-                Toast.makeText(getApplicationContext(), "item: "+item, Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//
+//                String item = parent.getItemAtPosition(position).toString();
+//                Toast.makeText(getApplicationContext(), "item: "+item, Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
 
         DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
             @Override
